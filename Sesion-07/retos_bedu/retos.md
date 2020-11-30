@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS ratings (
 );
 
 # Verificar la tabla ratings 
-SELECT * FROM ratings;
+SELECT * FROM ratings ORDER BY movieid ASC LIMIT 10;
 
 # Crear la tabla movies  
 CREATE TABLE IF NOT EXISTS movies (
@@ -37,8 +37,12 @@ CREATE TABLE IF NOT EXISTS movies (
 ); 
 
 # Verificar la tabla movies 
-SELECT * FROM movies;
+SELECT * FROM movies ORDER BY id LIMIT 10;
 ```
+
+![sql_movies](movies_sql.png)
+
+![sql_movies](ratings_sql.png)
 
 
 ## Reto 3: Realizando operaciones con Colecciones e importando datos 
